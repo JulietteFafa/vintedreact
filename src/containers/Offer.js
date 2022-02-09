@@ -25,12 +25,14 @@ const Offer = () => {
     };
     fetchData();
   }, []);
+  console.log(data);
   return isLoading ? (
     <div>Page en cours de chargement</div>
   ) : (
     <div>
       <Header />
       <div className="details">
+        ≈
         <div className="bigpic">
           <img src="" alt="bigpic" />
         </div>
