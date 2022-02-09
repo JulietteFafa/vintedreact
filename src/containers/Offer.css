@@ -1,0 +1,9 @@
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.profinfos {
+  display: flex;
+}

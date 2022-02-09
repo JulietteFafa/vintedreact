@@ -34,8 +34,8 @@ const Home = () => {
       <h2>Nb Offre: {data.count}</h2>
       <div className="Liste-Offre">
         {data.offers.map((elem) => {
-          console.log("test>", elem.owner.account.avatar.url);
-
+          console.log("test>", elem._id);
+          const id = elem._id;
           return (
             <div className="vignette">
               <div className="map1">
@@ -47,7 +47,7 @@ const Home = () => {
                   />
                   <p className="profname">{elem.owner.account.username}</p>
                 </div>
-                <Link to={`/offer/${elem.product_pictures[0].url}`}>
+                <Link to={`/offer/${id}`}>
                   <img
                     className="article"
                     src={elem.product_pictures[0].url}
