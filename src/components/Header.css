@@ -1,0 +1,9 @@
+img {
+  width: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}

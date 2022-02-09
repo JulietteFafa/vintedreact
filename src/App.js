@@ -1,9 +1,26 @@
 import "./App.css";
+//import axios from "axios";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React from "react";
+import Home from "./containers/Home";
+import Offer from "./containers/Offer";
+
+//1.lister les pages appli web
+//2.creer un composant par page
+//3. Creer les liens entre les pages
 
 function App() {
   return (
     <div>
-      Hello from <a href="https://www.lereacteur.io">Le Reacteur !</a>
+      <Router>
+        <Routes>
+          {/* //route page acceuil */}
+          <Route path="/" element={<Home />} />
+
+          {/* route page offer */}
+          <Route path="/offer/:id" element={<Offer />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
