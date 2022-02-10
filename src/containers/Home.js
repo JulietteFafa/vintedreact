@@ -24,6 +24,7 @@ const Home = () => {
     fetchData();
   }, []);
   //declarer les ids ici en .map
+
   return isLoading ? (
     <div>Page en cours de chargement</div>
   ) : (
@@ -34,7 +35,7 @@ const Home = () => {
       <h2>Nb Offre: {data.count}</h2>
       <div className="Liste-Offre">
         {data.offers.map((elem) => {
-          console.log("test>", elem._id);
+          //console.log("test>", elem._id);
           const id = elem._id;
           return (
             <div className="vignette">
