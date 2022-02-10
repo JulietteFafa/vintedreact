@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React from "react";
 import Home from "./containers/Home";
 import Offer from "./containers/Offer";
+import SignUp from "./containers/SignUp";
 
 //1.lister les pages appli web
 //2.creer un composant par page
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           {/* //route page acceuil */}
           <Route path="/" element={<Home />} />
+          <Route path="/signup" element={<SignUp />} />
 
           {/* route page offer */}
           <Route path="/offer/:id" element={<Offer />} />
